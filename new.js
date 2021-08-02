@@ -7,4 +7,7 @@ $(document).ready(function () {
         var parent = $(this).parent()
         parent.find('.footer__list').slideToggle()
     })
+    $('.topline__filter').click(function () {
+        $('.filter').toggleClass('is-open')
+    })
 })

@@ -380,3 +380,150 @@ input {
         max-width: 105px;
     }
 }
+.topline {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    margin-bottom: 20px;
+    padding: 5px 0;
+}
+.topline__filter {
+    padding-top: 5px;
+}
+.topline__filter svg ,.topline__filter span {
+    vertical-align: middle;
+}
+@media screen and (max-width: 992px) {
+    .sorting__count .select2-container--default .select2-selection--single {
+        background: transparent;
+        box-shadow: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .catalog__sorting {
+        margin-top: 0;
+    }
+    .filter {
+        top: 0px;
+        //width: 100%;
+        /*transform: translateX(0);*/
+    }
+}
+.card__desc {
+    padding-left: 97px;
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+.card__title {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: "SF Pro Display", Sans-Serif;
+    color: #272727;
+    margin-bottom: 50px;
+}
+.card__price .price__cost {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "SF Pro Display", Sans-Serif;
+    color: #BC18B0;
+}
+.card__sum {
+    margin-bottom: 30px;
+}
+.card__counters {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.card__desc .button-box {
+    margin-bottom: 0;
+    padding-bottom: 0 !important;
+}
+.card__counter, .card__rating {
+    margin-left: 0;
+}
+.counter__field {
+    border: none;
+    font-size: 20px;
+    font-family: "SF Pro Display", Sans-Serif;
+    font-weight: normal;
+}
+.card__desc .product-item__btn {
+    margin: 0;
+    height: 38px;
+    width: 131px;
+    padding: 0;
+    line-height: 38px;
+    margin-left: 35px;
+    font-size: 14px;
+}
+.card__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.card__item:last-child {
+    padding-bottom: 0;
+}
+.card__item img {
+    max-width: 40px;
+    vertical-align: top;
+}
+.card__item h3 {
+    font-size: 16px;
+    font-weight: 300;
+    color: #272727;
+    font-family: "SF Pro Display", Sans-Serif;
+}
+.card__item p {
+    margin-bottom: 0;
+    font-size: 12px;
+    color: #272727;
+    font-weight: 300;
+    font-family: "SF Pro Display", Sans-Serif;
+}
+.card__item .cart__right {
+    margin-left: 0;
+    width: auto;
+    padding-left: 21px;
+}
+.tab__title.ui-tabs-active a {
+    border-bottom: none;
+    background: #BC18B0;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    color: #fff;
+}
+.card-info .tab__title a {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    font-size: 17px;
+}
+.card-info .tab__title+.tab__title {
+    margin-left: 20px;
+}
+.tab__title a {
+    color: #272727;
+}
+.tab__contentes {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 25px;
+    padding: 25px 20px;
+    margin-bottom: 60px;
+}
+.card-info .tab__content {
+    padding: 0;
+}
+.card-info .tab__content p:last-child {
+    margin-bottom: 0;
+}
+.cs-section--similar .title {
+    font-size: 25px;
+    color: #272727;
+    font-family: "SF Pro Display", Sans-Serif;
+}
