@@ -944,3 +944,17 @@ input {
     color: #8C8C8C;
     font-size: 14px;
 }
+.ya-share2__container_size_m.ya-share2__container_alone .ya-share2__popup_direction_bottom, .ya-share2__container_size_m .ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__popup_direction_bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    z-index: 100000;
+}
+.news__footer {
+    position: relative;
+    z-index: 100000000;
+}
+.ya-share2__container_size_m .ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__link_more.ya-share2__link_more-button-type_short {
+    display: none;
+}

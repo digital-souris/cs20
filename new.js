@@ -22,4 +22,9 @@ $(document).ready(function () {
     $('.mobile-filter__arrow').click(function () {
         $(this).closest('.mobile-filter').removeClass('is-open')
     })
+    $('.news__footer a').click(function () {
+        if ($(this).find('.share2').length) {
+            $('.ya-share2__popup').toggleClass('ya-share2__popup_visible')
+        }
+    })
 })
