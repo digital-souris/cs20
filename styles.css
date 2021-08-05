@@ -1,3 +1,32 @@
+Skip to content
+Search or jump to…
+Pull requests
+Issues
+Marketplace
+Explore
+
+@CodekingFedorchenkoA
+digital-souris
+/
+cs20
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+cs20/styles.css
+@digital-souris
+digital-souris add profile
+Latest commit 636a79c 25 minutes ago
+History
+1 contributor
+960 lines (934 sloc)  19.3 KB
+
 body {
     font-family: "SF Pro Display", Sans-Serif;
 }
@@ -366,7 +395,7 @@ input {
         display: block;
     }
 
-    
+
 }
 @media only screen and (max-width: 480px) {
     .catalog .product-item__wrap.layout-two-column .product-item__btn {
@@ -637,17 +666,17 @@ input {
     color: #8C8C8C;
 
 }
-.news .news__item {
+.news__layout  .news__item {
     height: 422px;
     overflow: hidden;
     padding-bottom: 20px;
 }
-.news .news__item img {
+.news__layout .news__item img {
     max-height: 200px;
     width: auto;
 
 }
-.news .cs-card:not(.cs-card--transform) .cs-card__text {
+.news__layout .cs-card:not(.cs-card--transform) .cs-card__text {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -774,7 +803,7 @@ input {
     font-weight: normal;
     color: #272727;
     margin: 0;
-    }
+}
 .contacts__wrap {
     display: flex;
     justify-content: space-between;
@@ -957,4 +986,47 @@ input {
 }
 .ya-share2__container_size_m .ya-share2__item_more.ya-share2__item_has-pretty-view .ya-share2__link_more.ya-share2__link_more-button-type_short {
     display: none;
+}
+.ya-share2 {
+    height: 0;
+}
+.lk__events {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.lk__wrap_event {
+    max-width: 422px;
+    width: 100%;
+}
+.lk__box .list {
+    margin-bottom: 0;
+}
+.lk__box_title-puple {
+    color: #BC18B0;
+}
+.lk-sale__list li, .lk__box .list__item {
+    font-size: 14px;
+}
+.lk__box_title {
+    margin-bottom: 20px;
+}
+.lk__box .list__item span:last-child {
+    text-align: right;
+}
+.lk__box .list__item span:last-child {
+    min-width: auto;
+}
+.lk-sale__list li, .lk__box .list__item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.lk__box .list__item span:first-child {
+    min-width: auto;
+}
+.lk__event_text {
+    padding-top: 25px;
+    font-size: 12px;
+    color: #272727;
 }
