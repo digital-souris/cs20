@@ -637,7 +637,25 @@ input {
     color: #8C8C8C;
 
 }
+.news .news__item {
+    height: 422px;
+    overflow: hidden;
+    padding-bottom: 20px;
+}
+.news .news__item img {
+    max-height: 200px;
+    width: auto;
 
+}
+.news .cs-card:not(.cs-card--transform) .cs-card__text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /*отвечает за количество строк после которых рубить*/
+    -webkit-box-orient: vertical;
+    line-height: 140%; /*какая у нас стоит указать*/
+    height: 95px; /*просчитать какое нужно*/
+}
 .news__container {
     display: flex;
     justify-content: space-between;
@@ -733,4 +751,50 @@ input {
         padding-top: 20px;
         max-width: 100%;
     }
+}
+.product-item__btn_active {
+    background: transparent;
+    border: 1px solid #BC18B0;
+    color: #BC18B0;
+}
+.contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.contacts__item {
+    max-width: 380px;
+    width: 100%;
+    padding: 30px;
+}
+.contacts__title {
+    font-size: 20px;
+    font-family: SF Pro Display, Sans-Serif;
+    font-weight: normal;
+    color: #272727;
+    margin: 0;
+    }
+.contacts__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+.contacts__wrap svg , .contacts__wrap span {
+    vertical-align: top;
+}
+.contacts__wrap svg {
+    max-width: 19px;
+    width: 100%;
+}
+.contacts__wrap span, .contacts__wrap a {
+    padding-left: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #272727;
+}
+.contacts__wrap a span {
+    font-size: 13px;
+    padding-left: 0;
 }
