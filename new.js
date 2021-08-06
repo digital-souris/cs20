@@ -96,6 +96,12 @@ $(document).ready(function(){
         }
         return false
     })
+    $('.header__hamburger').click(function () {
+        $('.mobile-nav').toggleClass('is-open')
+    })
+    $('.mobile-nav .mobile-filter__cross').click(function () {
+        $('.mobile-nav').removeClass('is-open')
+    })
 });
 
 

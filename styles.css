@@ -1194,3 +1194,34 @@ input {
 .order-item .button-box .btn:nth-child(2) {
     margin-left: auto;
 }
+.mobile-nav {
+    padding: 0;
+    max-width: 100%;
+}
+.mobile-nav__list {
+    margin: 0;
+}
+
+.mobile-nav__item svg {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.mobile-nav__link {
+    padding: 0;
+}
+.mobile-nav__item li:first-child {
+    display: block;
+}
+.mobile-filter__body > ul ul li {
+    background: transparent;
+}
+.mobile-nav__link {
+    font-size: 17px;
+}
+.mobile-filter__body > ul ul {
+    display: block;
+}
+.mobile-filter__body > ul ul {
+    padding-left: 15px;
+    padding-top: 10px;
+}
