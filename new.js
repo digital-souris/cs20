@@ -82,6 +82,20 @@ $(document).ready(function(){
             return false
         }
     })
+    $('.order__right a').click(function (e) {
+        e.preventDefault()
+        var parent = $(this).closest('.order-item')
+        $(parent).toggleClass('is-open')
+        var content = $(this).closest('.order-item').find('.order-item__content')
+        $(content).slideToggle()
+        if ($(parent).hasClass('is-open')) {
+            $(this).text('Скрыть')
+        }
+        else {
+            $(this).text('Подробности')
+        }
+        return false
+    })
 });
 
 
