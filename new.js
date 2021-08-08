@@ -157,6 +157,18 @@ $(document).ready(function(){
         }
     
     })
+    $('.c-dropdown__title').click(function() {
+        $(this).parent().toggleClass('is-active')
+    })
+    $('.open-modal').click(function(e) {
+        e.preventDefault()
+        $('.modal').hide()
+        $('.modal[data-auth='+ $(this).attr('data-auth') +']').css("display", "flex").fadeIn()
+        return false
+    })
+    $('.modal__cross').click(function() {
+        $('.modal').fadeOut()
+    })
 });
 
 

@@ -1728,3 +1728,135 @@ input {
         font-size: 14px;
     }
 }
+.c-dropdown__list::before {
+    display: none;
+}
+.c-dropdown.is-active .c-dropdown__list {
+    top: 100%;
+    border-top: 4px solid #BC18B0;
+}
+.c-dropdown__item:first-child {
+    padding-top: 0;
+}
+.c-dropdown__link svg {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.c-dropdown__link {
+    padding: 10px 15px;
+}
+.c-dropdown__link {
+    font-size: 15px;
+    color: #272727;
+}
+.c-dropdown__item:last-child {
+    padding-bottom: 0;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.5);
+    overflow: auto;
+}
+.modal__wrapper {
+    background-color: #fff;
+    max-width: 380px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+}
+.modal__title {
+    text-align: center;
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+
+    color: #272727;
+    padding-bottom: 20px;
+}
+.modal__desc {
+    font-size: 14px;
+    font-weight: normal;
+    color: #272727;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.modal__cross {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+.modal__cross svg {
+    vertical-align: top;
+}
+.modal__item {
+    padding-top: 20px;
+    max-width: 235px;
+    width: 100%;
+    margin: 0 auto;
+}
+.modal__item a {
+    text-align: center;
+    border: 1px solid #272727;
+    border-radius: 28px;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    color: #272727;
+    font-size: 14px;
+}
+.modal__item a svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+}
+.modal__footer {
+    padding-top: 40px;
+    font-size: 14px;
+    color: #272727;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal__footer a {
+    color: #BC18B0;
+}
+.modal__label {
+    padding-bottom: 10px;
+}
+.modal__label label {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+
+    color: #8C8C8C;
+}
+.modal__item input {
+    border: 0.5px solid #8C8C8C;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+}
+.modal {
+    display: none;
+}
+.btn-accent {
+    border: none;
+}
