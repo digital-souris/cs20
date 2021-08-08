@@ -102,6 +102,61 @@ $(document).ready(function(){
     $('.mobile-nav .mobile-filter__cross').click(function () {
         $('.mobile-nav').removeClass('is-open')
     })
+    $('.catalogs__slider').slick({
+        dots: true,
+        arrows: false,
+        slidesToShow: 1
+    })
+    $('.first-slider').slick({
+        arrows: false,
+        centerMode: true,
+        centerPadding: 40,
+        slidesToShow: 3,
+        infinite: true,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    centerPadding: 10,
+                    slidesToShow: 1.7,
+                    slidesToScroll: 1,
+                    centerMode: true,
+                }
+            },
+        ]
+    })
+    $('.catalogs .nav-tabs a').click(function (e) {
+        e.preventDefault()
+        var link = $(this).attr('href')
+        if (!$(link).hasClass('active')) {
+            $('.catalogs .nav-link').removeClass('active')
+            $(this).addClass('active')
+            $('.catalogs .tab-pane').removeClass('active')
+            $(link).addClass('active')
+        }
+        return false
+    })
+    $('.asks__header').click(function() {
+        var parent = $(this).closest('.asks__item')
+        $(parent).find('.asks__body').slideToggle()
+        $(parent).find('.asks__body').toggleClass('active')
+        if($(parent).find('.asks__body').hasClass('active')) {
+            $(this).find('span').text('-')
+        }
+        else {
+            $(this).find('span').text('+')
+        }
+    
+    })
 });
 
 
