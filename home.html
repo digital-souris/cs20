@@ -588,22 +588,54 @@
 			<div class="container">
 				<div class="catalogs">
 					<h2 class="catalog__title page-title">Каталоги автозапчастей</h2>
+					<div class="catalogs__left catalogs__navs">
+						<div class="nav nav-tabs">
+							<div class="nav-item">
+								<a href="#tab-first" class="nav-link active">Для легковых</a>
+							</div>
+							<div class="nav-item">
+								<a href="#tab-second" class="nav-link">Для коммерческих</a>
+							</div>
+							<div class="nav-item">
+								<a href="#tab-third" class="nav-link">Для грузовых</a>
+							</div>
+						</div>
+					</div>
 					<div class="catalogs__wrapper">
 						<div class="catalogs__left">
-							<div class="nav nav-tabs">
-								<div class="nav-item">
-									<a href="#tab-first" class="nav-link active">Для легковых</a>
-								</div>
-								<div class="nav-item">
-									<a href="#tab-second" class="nav-link">Для коммерческих</a>
-								</div>
-								<div class="nav-item">
-									<a href="#tab-third" class="nav-link">Для грузовых</a>
-								</div>
-							</div>
 							<div class="tab-content">
 								<div class="tab-pane fade show active" id="tab-first">
 									<ul class="catalogs__list">
+										<li>
+											<span>В</span>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<span>В</span>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<span>В</span>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<span>В</span>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<span>В</span>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
 										<li>
 											<span>В</span>
 											<a href="#">
@@ -708,6 +740,64 @@
 											</a>
 										</li>
 										<li>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<span>В</span>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<span>В</span>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<span>В</span>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
 											<span>В</span>
 											<a href="#">
 												ВАЗ
@@ -721,6 +811,45 @@
 										<li>
 											<a href="#">
 												ВАЗ
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<span>В</span>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												ВАЗ
+											</a>
+										</li>
+										<li class="catalogs__all">
+											<a href="#">
+												<b>Еще</b>
+												<svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M10.1875 1.625L5.5 6.3125L0.8125 1.625" stroke="#BC18B0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
 											</a>
 										</li>
 									</ul>
@@ -783,7 +912,7 @@
 								</div>
 								<div class="product-item__bottom">
 									<div class="product__count">
-										<button>
+										<button class="js-product-minus">
 											<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
 												xmlns="http://www.w3.org/2000/svg">
 												<path d="M2.34375 7.5H12.6562" stroke="#272727" stroke-width="1.5"
@@ -791,7 +920,7 @@
 											</svg>
 										</button>
 										<span>0</span>
-										<button>
+										<button class="js-product-plus">
 											<svg width="15" height="15" viewBox="0 0 15 15" fill="none"
 												xmlns="http://www.w3.org/2000/svg">
 												<path d="M2.34375 7.5H12.6562" stroke="#272727" stroke-width="1.5"
@@ -801,7 +930,7 @@
 											</svg>
 										</button>
 									</div>
-									<button onclick="location.href = &#39;/catalog/?action=ADD2BASKET&amp;id=24458&#39;"
+									<button
 										class="btn-icon btn-icon--addInCart product-item__btn js-add-in-cart"
 										id="add-to-basket">
 										В корзину
@@ -991,7 +1120,7 @@
 				<div class="container">
 					<div class="news__top">
 						<h1 class="h1 page-title">Новости</h1>
-						<div class="news__all">
+						<div class="news__all news__all_desktop">
 							<a href="#">Все новости компании
 								<svg width="10" height="10" viewBox="0 0 10 10" fill="none"
 									xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -1035,6 +1164,23 @@
 							<p class="cs-card__text js-text-overflow">Пользователям канала Drive2.ru мы предоставляем
 								скидку 5% на
 								всю продукцию по промокоду, которую получите после подписки на наш канал.</p>
+						</a>
+					</div>
+					<div class="news__all news__all_mobile">
+						<a href="#">Все новости компании
+							<svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+								 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<rect y="10" width="10" height="10" transform="rotate(-90 0 10)"
+									  fill="url(#pattern0)" />
+								<defs>
+									<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1"
+											 height="1">
+										<use xlink:href="#image0" transform="scale(0.00195312)" />
+									</pattern>
+									<image id="image0" width="512" height="512"
+										   xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTQ1IDc5LjE2MzQ5OSwgMjAxOC8wOC8xMy0xNjo0MDoyMiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTkgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkVCN0IxNzY3QjdBODExRUFCMDJCQzY3NDkyRDkzRkJEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkVCN0IxNzY4QjdBODExRUFCMDJCQzY3NDkyRDkzRkJEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RUI3QjE3NjVCN0E4MTFFQUIwMkJDNjc0OTJEOTNGQkQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RUI3QjE3NjZCN0E4MTFFQUIwMkJDNjc0OTJEOTNGQkQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7H2owkAAANaklEQVR42uzd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" />
+								</defs>
+							</svg>
 						</a>
 					</div>
 				</div>

@@ -26,6 +26,23 @@ $(document).ready(function(){
         }
 
     });
+    $('.catalogs__list').each(function () {
+        $(this).find('li').each(function (index) {
+            if (index > 20) {
+                $(this).hide()
+            }
+        })
+        if ($(this).find('li').length > 19) {
+            $(this).find('.catalogs__all').show()
+        }
+    })
+
+    $('.catalogs__all').click(function (e) {
+        e.preventDefault()
+        $(this).parent().find('li').show()
+        $(this).hide()
+        return false
+    })
 
     $('.footer__top').click(function () {
         var body = $('html, body');
@@ -82,17 +99,21 @@ $(document).ready(function(){
             return false
         }
     })
-    $('.order__right a').click(function (e) {
+    $('.order__right a, .order__mobile').click(function (e) {
         e.preventDefault()
         var parent = $(this).closest('.order-item')
         $(parent).toggleClass('is-open')
         var content = $(this).closest('.order-item').find('.order-item__content')
         $(content).slideToggle()
-        if ($(parent).hasClass('is-open')) {
-            $(this).text('Скрыть')
+        if ($(this).hasClass('order__mobile')) {
+            $(this).toggleClass('active')
         }
         else {
-            $(this).text('Подробности')
+            if ($(parent).hasClass('is-open')) {
+                $(this).text('Скрыть')
+            } else {
+                $(this).text('Подробности')
+            }
         }
         return false
     })
@@ -114,6 +135,8 @@ $(document).ready(function(){
         slidesToShow: 3,
         infinite: true,
         dots: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
         responsive: [
             {
                 breakpoint: 1024,
@@ -168,6 +191,21 @@ $(document).ready(function(){
     })
     $('.modal__cross').click(function() {
         $('.modal').fadeOut()
+    })
+    $('.js-add-in-cart').click(function (e) {
+        e.preventDefault()
+        $(this).parent().addClass('show-counter')
+        $(this).parent().find('.product__count').find('span').text(1)
+        return false
+    })
+    $('.js-product-minus').click(function () {
+        $(this).parent().find('span').text($(this).parent().find('span').text() - 1)
+        if ($(this).parent().find('span').text() <= 0) {
+            $(this).closest('.product-item__bottom').removeClass('show-counter')
+        }
+    })
+    $('.js-product-plus').click(function () {
+        $(this).parent().find('span').text(parseInt($(this).parent().find('span').text()) + 1)
     })
 });
 

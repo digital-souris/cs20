@@ -482,16 +482,48 @@
 						<div class="lk-nav js-lk-nav">
 							<ul class="lk-nav__list">
 								<li class="lk-nav__item ">
-									<a class="lk-nav__link" href="/profile/" data-page-target="settings">
-										<span class="lk-nav__text  ">Личные данные</span>
-										<i class="fas fa-cog lk-nav__icon"></i>
-									</a>
+									<b>Личные данные</b>
+									<ul>
+										<li>
+											<a class="lk-nav__link" href="/profile/" data-page-target="settings">
+												<span class="lk-nav__text  ">Личные данные</span>
+											</a>
+										</li>
+										<li>
+											<a class="lk-nav__link" href="/profile/" data-page-target="settings">
+												<span class="lk-nav__text  ">Личные данные</span>
+											</a>
+										</li>
+									</ul>
 								</li>
 								<li class="lk-nav__item ">
-									<a class="lk-nav__link" title="Изменить профиль" data-page-target="person"
-									   href="/profile/profili_pokupatelya/index.php?ID=1126">  <span class="lk-nav__text">Компания</span>
-										<i class="fas fa-pencil lk-nav__icon" title="редактировать"></i>
-									</a>
+									<b>Мои заказы</b>
+									<ul>
+										<li>
+											<a class="lk-nav__link" href="/profile/" data-page-target="settings">
+												<span class="lk-nav__text  ">Личные данные</span>
+											</a>
+										</li>
+										<li>
+											<a class="lk-nav__link" href="/profile/" data-page-target="settings">
+												<span class="lk-nav__text  ">Личные данные</span>
+											</a>
+										</li>
+										<li>
+											<a class="lk-nav__link" href="/profile/" data-page-target="settings">
+												<span class="lk-nav__text  ">Личные данные</span>
+											</a>
+										</li>
+										<li class="is-active">
+											<a class="lk-nav__link" href="/profile/" data-page-target="settings">
+												<span class="lk-nav__text  ">Личные данные</span>
+												<svg width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<path d="M0.5 1.25L4.25 5L0.5 8.75" stroke="#BC18B0" stroke-linecap="round" stroke-linejoin="round"/>
+												</svg>
+
+											</a>
+										</li>
+									</ul>
 								</li>
 								<!-- <li class="lk-nav__item  lk-nav__item--add " >
 											<a class="lk-nav__link" href="/profile/profili_pokupatelya/add.php"  >
@@ -499,23 +531,6 @@
 											                <i class="fas fa-plus-circle lk-nav__icon"></i>
 											              </a>
 											            </li> -->
-							</ul>
-							<ul class="lk-nav__list">
-								<li class="lk-nav__item  lk-nav__item--alone lk-nav__item--devider ">
-									<a class="lk-nav__link" href="/profile/orders/" data-page-target="order">
-										<span class="lk-nav__text ">Мои заказы</span>
-									</a>
-								</li>
-								<li class="lk-nav__item  lk-nav__item--alone ">
-									<a class="lk-nav__link" href="/profile/sales/" data-page-target="sale">
-										<span class="lk-nav__text ">Персональные скидки</span>
-									</a>
-								</li>
-								<li class="lk-nav__item  lk-nav__item--alone lk-nav__item--exit xs-only ">
-									<a class="lk-nav__link" href="/?logout=yes" data-page-target="exit">
-										<span class="lk-nav__text ">Выход</span>
-									</a>
-								</li>
 							</ul>
 						</div>
 					</aside>
@@ -543,7 +558,7 @@
 										</li>
 									</ul>
 								</div>
-								<div class="lk__event_text">
+								<div class="lk__event_text sm-hide md-hide">
 									<p>
 										*Персональная скидка постоянного розничного покупателя - это скидка, размер которой
 										индивидуален для каждого розничного покупателя. Может применяться при осуществлении покупок
@@ -585,6 +600,14 @@
 											<span>10%</span>
 										</li>
 									</ul>
+								</div>
+								<div class="lk__event_text lg-hide sm-show md-show">
+									<p>
+										*Персональная скидка постоянного розничного покупателя - это скидка, размер которой
+										индивидуален для каждого розничного покупателя. Может применяться при осуществлении покупок
+										исключительно на нашем сайте CS20.RU. При этом размер персональной скидки может накапливаться (расти) от общих сумм,
+										потраченных при осуществлении покупок начиная с момента регистрации на сайте.
+									</p>
 								</div>
 							</div>
 						</div>
