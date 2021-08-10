@@ -1913,8 +1913,10 @@ input {
     justify-content: flex-start;
     max-width: 550px;
 }
-.product-item__bottom.show-counter .product-item__btn {
-    display: none;
+@media screen and (max-width: 768px) {
+    .product-item__bottom.show-counter .product-item__btn {
+        display: none;
+    }
 }
 .product-item__bottom.show-counter .product__count {
     display: block;
