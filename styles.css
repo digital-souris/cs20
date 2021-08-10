@@ -2090,3 +2090,22 @@ input {
         margin-right: auto;
     }
 }
+.first-slider__wrapper.slick-center::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #BC18B0;
+    z-index: 10;
+    animation: animationLine 5.1s linear;
+}
+@keyframes animationLine {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
